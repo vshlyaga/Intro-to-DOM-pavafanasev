@@ -1,18 +1,31 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Задание 1</title>
   </head>
   <body>
-    <p>1</p>
-    <p>2</p>
-    <p>3</p>
-    <p>4</p>
-    <p>5</p>
-    <p>6</p>
-    <p>7</p>
-    <p>8</p>
-    <p>9</p>
+    <p id="p1">1</p>
+    <p id="p2">2</p>
+    <p id="p3">3</p>
+    <p id="p4">4</p>
+    <p id="p5">5</p>
+    <p id="p6">6</p>
+    <p id="p7">7</p>
+    <p id="p8">8</p>
+    <p id="p9">9</p>
   </body>
+  <script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var r = Math.round(Math.random()*9);
+		var r1 = Math.round(Math.random()*9);
+		var p = document.getElementsByTagName('p');
+		var p1 = p[r];
+		var p2 = p[r1];
+		console.log(p1);
+		console.log(p2);
+		document.body.insertBefore(p1, p[r1]);
+		document.body.insertBefore(p2, p[r]);
+	});
+  </script>
 </html>
