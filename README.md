@@ -37,3 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
 ```
 div.style.border = '3px solid red';
 ```
+
+# Источники
+
+1. Основная информация по работе с DOM — [https://learn.javascript.ru/document](https://learn.javascript.ru/document)
+2. Информация по отладке JavaScript кода в браузере Google Chrome — [https://learn.javascript.ru/debugging-chrome](https://learn.javascript.ru/debugging-chrome)
